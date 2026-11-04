@@ -1,0 +1,124 @@
+
+
+body {
+
+    background-image: url('../img/Pizza.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;       /* Estica a imagem para cobrir toda a área */
+    background-position: center;  /* Centraliza a imagem */
+    background-attachment: fixed; /* Opcional: deixa o fundo fixo enquanto o conteúdo rola */
+
+    min-height: 100vh;
+
+}
+
+.paginas a, .paginas li,.paginas ul{
+
+    display:flex;
+    gap:20px;
+    padding:0;
+
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+
+
+
+
+.principal{
+
+    width: 684px;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+    margin-left:auto;
+    
+    padding:20px 0;
+    
+    background-color: transparent;
+    
+    background-color: #1d9701;
+    
+}
+
+
+.sobre_nos h2{
+
+    color:white;
+
+}
+
+.principal img{
+
+    width: 550px;
+    height: 550px;
+    border-radius:8px;
+
+}
+
+
+.sobre_nos{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap:15px;
+    padding:0 20px;
+    padding-top:10px;
+
+
+    width: 684px;
+    min-height: 550px;
+
+    background-color: #1d9701;
+
+
+}
+
+.comeco{
+
+    margin-right:auto;
+
+}
+
+.sobre_nos p{
+
+    color:white;
+    text-align: center;
+    font-family: 'Montserrat';
+    padding: 5px;
+
+}
+
+.sobre_nos h2{
+
+    font-family: 'Montserrat';
+    font-weight: 800;
+
+}
+
+.missao{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding:0 20px;
+    margin-left:auto;
+    gap:15px;
+
+    width: 684px;
+    min-height: 550px;
+
+    background-color: #1d9701;
+
+}
+

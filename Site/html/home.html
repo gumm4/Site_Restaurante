@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Nostra</title>
+    <meta name="description" content="Casa Nostra: Pizzaria e Hamburgueria com pizzas de forno a lenha. Veja o cardápio, horários e localização.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Casa Nostra | Pizzaria e Hamburgueria">
+    <meta property="og:description" content="Pizzas de forno a lenha e hambúrgueres. Veja o cardápio e peça online.">
+    <meta property="og:image" content="https://DOMINIO/img/Logo.jpg">
+    <meta property="og:url" content="https://DOMINIO/html/home.html">
+    <meta name="theme-color" content="#aa0a0a">
+    <link rel="icon" href="../img/Logo.jpg">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/extras.css">
+    <script src="../js/home.js" defer></script>
+    <script src="../js/extras.js" defer></script>
+    <script src="../js/cardapio.js" defer></script>
+    <script src="../js/galeria.js" defer></script>
+    <script type="application/ld+json">
+
+        {
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            "name": "Casa Nostra Pizzaria e Hamburgueria",
+            "servesCuisine": ["Italiana", "Pizza", "Hambúrguer"],
+            "url": "https://DOMINIO/html/home.html",
+            "telephone": "+55 37 99351906"
+            "sameAs": ["https://www.instagram.com/casanostra/"],
+            "openingHoursSpecification": [
+            
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Sunday"],
+                "opens": "17:00",
+                "closes": "23:00"
+            },
+
+            {
+
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Friday", "Saturday"],
+                "opens": "17:00",
+                "closes": "00:00"
+
+            },
+
+
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Friday", "Saturday"],
+                "opens": "17:00",
+                "closes": "00:00"
+            }
+            
+            ]
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="../img/Logo.jpg" alt="Logo Casa Nostra">
+        <div class="paginas" id="menu-principal">
+            <nav>
+                <ul>
+                    <li><a href="../html/faq.html">FAQs</a></li>
+                    <li><a href="../html/home.html">Cardápio</a></li>
+                    <li><a href="../html/sobre.html">Sobre nós</a></li>
+                    <li><a href="../html/localizacao.html">Localização</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    </header>
+    <main>
+
+        <div class="principal">
+            <div class="logo">
+                <img src="../img/Logo.jpg" alt="Logo Casa Nostra">
+                <h2 class="titulo">O MELHOR DA CULINÁRIA ITALIANA</h2>
+            </div>
+        </div>
+
+        <div class="cardapio">
+            <h2 class="titulo">Nosso Cardápio</h2>
+
+            <div class="cardapio-abas" id="cardapio-abas" role="tablist" aria-label="Categorias do cardápio"></div>
+            <div class="cardapio-subabas" id="cardapio-subabas" role="tablist" aria-label="Tipos" hidden></div>
+            <div class="cardapio-itens" id="cardapio-itens" role="tabpanel"></div>
+
+            <a class="pedido" href="https://app.cardapioweb.com/pizza_forno_lenha?s=google" target="_blank" rel="noopener noreferrer">
+                <button>Peça Aqui!</button>
+            </a>
+        </div>
+
+        <div class="fundo_pratos">
+            <div class="pratos">
+                <div class="carrosel_imagens">
+                    <img src="../img/imagem1.jpeg" class="slide ativo" alt="Prato 1">
+                    <img src="../img/imagem2.jpeg" class="slide" alt="Prato 2">
+                    <img src="../img/imagem3.jpeg" class="slide" alt="Prato 3">
+                    <button class="botao voltar" onclick="mudarSlide(-1)">&#10094;</button>
+                    <button class="botao avancar" onclick="mudarSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="galeria">
+            <h2 class="titulo">Galeria</h2>
+            <div class="galeria-grade" id="galeria-grade"></div>
+        </section>
+
+        <section class="depoimentos">
+            <h2 class="titulo">O que nossos clientes dizem</h2>
+            <div class="depoimentos-lista" id="depoimentos-lista"></div>
+        </section>
+
+        <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+            <button type="button" class="lightbox-fechar" id="lightbox-fechar" aria-label="Fechar foto">✕</button>
+            <img id="lightbox-img" alt="">
+        </dialog>
+
+    </main>
+    <footer>
+        <div class="rodape">
+            <div class="contato">
+                <a href="https://www.instagram.com/casanostra/" target="_blank" rel="noopener noreferrer">
+                    <img src="../img/insta_sem_fundo.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer">
+                    <img src="../img/face_sem_fundo.png" alt="Facebook">
+                </a>
+            </div>
+        </div>
+
+        <p>Terça à Quinta e Domingo: 17:00 às 23:00 ° Sexta e Sábado: 17:00 às 00:00</p>
+        <p id="status-funcionamento"></p>
+    </footer>
+
+    <a class="whatsapp-flutuante"
+       href="https://wa.me/553799351906?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido."
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Falar com a Casa Nostra pelo WhatsApp">
+        💬 WhatsApp
+    </a>
+</body>
+</html>

@@ -1,0 +1,181 @@
+
+.paginas a, .paginas li,.paginas ul{
+    display:flex;
+    gap:20px;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    background-image:url('../img/Pizza.jpeg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.titulo{
+    background-color: #1d9701;
+    color: #f8f5f5;
+    font-family:'Montserrat';
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+/* FAQ Section */
+.faq-section{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.faq-titulo{
+    background-color: #1d9701;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.adicionar-card{
+    background: rgba(255,255,255,0.9);
+    color: #222;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.adicionar-card h2{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+    color:#1d9701;
+}
+
+.adicionar-card form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.adicionar-card label{
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.adicionar-card input,
+.adicionar-card textarea{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.adicionar-card textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-adicionar{
+    background: #aa0a0a;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-adicionar:hover{
+    background: #8a0808;
+}
+
+/* Lista de perguntas */
+#lista-faqs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-item{
+    background: rgba(255,255,255,0.92);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.faq-item:hover{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.faq-pergunta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 18px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #222;
+    background: rgba(255,255,255,0.6);
+    outline: none;
+}
+
+.faq-pergunta .seta{
+    font-size: 0.8rem;
+    transition: transform 0.25s ease;
+    display: inline-block;
+}
+
+.faq-item.aberto .seta{
+    transform: rotate(180deg);
+}
+
+.faq-resposta{
+    padding: 0px;
+    color: #333;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.aberto .faq-resposta{
+    max-height: 500px;
+    padding: 0 18px 18px;
+}
+
+@media (max-width: 600px){
+    .faq-section{
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+    .faq-titulo{
+        font-size: 1.5rem;
+    }
+    .adicionar-card{
+        padding: 16px;
+    }
+}
