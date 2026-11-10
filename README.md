@@ -1,2 +1,14 @@
-# Casa Nostra
-Este é um site que criei para um restaurante e pizzaria com o propósito de ampliar os clientes do local e facilitar o recebimento de pedidos
+# Casa Nostra 🍕
+
+Site desenvolvido para a pizzaria Casa Nostra, com o objetivo de apresentar o estabelecimento e facilitar o acesso dos clientes às suas informações.
+
+## Tecnologias utilizadas
+- HTML
+- CSS
+- JavaScript
+
+## Acesso ao site
+https://casanostrapizzaria.com.br/
+
+## Desenvolvedor
+gumm4
