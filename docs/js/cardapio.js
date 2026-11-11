@@ -69,6 +69,7 @@ function mostrarPratos(lista) {
     lista.forEach(prato => {
         const card = document.createElement('div');
         card.className = 'prato-item';
+        card.tabIndex = 0;
 
         const topo = document.createElement('div');
         topo.className = 'prato-topo';
