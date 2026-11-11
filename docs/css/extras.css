@@ -134,9 +134,44 @@
     white-space: nowrap;
 }
 
-.prato-item p {
-    font-size: 0.95rem;
-    line-height: 1.4;
+
+@media (hover: hover) {
+
+    .prato-item{
+        position:relative;
+        align-self:start;
+    }
+        
+    
+
+    .prato-item p {
+        position:absolute;
+        top:100%;
+        left:0;
+        right:0;
+        padding: 0 16px 16px;
+        background-color: #fff;
+        border-radius: 0 0 10px 10px;
+        box-shadow:0 8px 14px rgba(0,0,0, 0.3);
+        opacity:0;
+        visibility:hidden;
+        transition:opacity 0.2s ease;
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .prato-item:hover,
+    .prato-item:focus-within {
+        z-index: 5;
+        background-color: #fff;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .prato-item:hover p,
+    .prato-item:focus-within p {
+        opacity: 1;
+        visibility: visible;
+        }
 }
 
 /* ===== Home: galeria e depoimentos ===== */
