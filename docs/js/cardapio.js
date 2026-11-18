@@ -8,7 +8,10 @@ const CARDAPIO = {
             { nome: 'Frangopiry',     descricao: 'Molho, frango desfiado, mussarela, catupiry, azeitona e orégano.',                       preco: null },
             { nome: 'Casa Nostra',    descricao: 'Molho, mussarela, presunto, bacon, peito de frango desfiado, ervilha, milho verde e orégano.', preco: null },
             { nome: 'Moda da Casa',   descricao: 'Molho, mussarela, presunto, calabresa, bacon, pimentão, cebola, azeitonas e orégano.',   preco: null },
-            { nome: 'Quatro Queijos', descricao: 'Molho, mussarela, catupiry, parmesão, queijo prato, azeitonas e orégano.',               preco: null }
+            { nome: 'Quatro Queijos', descricao: 'Molho, mussarela, catupiry, parmesão, queijo prato, azeitonas e orégano.',               preco: null },
+            { nome: 'Calapiry',       descricao: 'Molho,mussarela,Calabresa,Catupiry',                                                     preco: null},
+            { nome: 'Siliciana',      descricao: 'Molho,Mussarela,Bacon,Catupiry',                                                         preco:null},
+            { nome: 'Gospel',         descricao: 'Molho,Mussarela,Frango,Bacon,Catupiry',                                                  preco:null}
         ],
 
         'Especiais': [
