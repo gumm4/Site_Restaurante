@@ -11,7 +11,7 @@ body{
     background-image:url('../img/Pizza.jpeg');
     background-size:cover;
     background-repeat:no-repeat;
-    min-height: 100vh;
+    background-position: center;
     font-family: 'Montserrat', sans-serif;
 }
 
