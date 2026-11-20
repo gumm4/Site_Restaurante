@@ -1,7 +1,9 @@
 const FOTOS = [
-    { src: '../img/imagem1.jpeg', alt: 'Prato da Casa Nostra 1' },
-    { src: '../img/imagem2.jpeg', alt: 'Prato da Casa Nostra 2' },
-    { src: '../img/imagem3.jpeg', alt: 'Prato da Casa Nostra 3' }
+    { src: '../img/Imagem_Prato_1.jpeg', alt: 'Prato da Casa Nostra 1' },
+    { src: '../img/Imagem_Prato_2.jpeg', alt: 'Prato da Casa Nostra 2' },
+    { src: '../img/Imagem_Prato_3.jpeg', alt: 'Prato da Casa Nostra 3' },
+    { src: '../img/Imagem_Prato_4.jpeg', alt: 'Prato da Casa Nostra 4' },
+    { src: '../img/Imagem_Prato_5.jpeg', alt: 'Prato da Casa Nostra 5' }
 ];
 
 // Exemplos de teste: troque por depoimentos reais antes de publicar

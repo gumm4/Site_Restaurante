@@ -3,12 +3,26 @@ const CARDAPIO = {
     'Pizzas': {
 
         'Tradicionais': [
-            { nome: 'Alho e Óleo',    descricao: 'Molho, mussarela, tomate, parmesão gratinado, alho e orégano.',                          preco: null },
-            { nome: 'Calabresa',      descricao: 'Molho, mussarela, linguiça calabresa fatiada, cebola e orégano.',                        preco: null },
-            { nome: 'Frangopiry',     descricao: 'Molho, frango desfiado, mussarela, catupiry, azeitona e orégano.',                       preco: null },
+            { nome: 'Alho e Óleo',    descricao: 'Molho, mussarela, tomate, parmesão gratinado, alho e orégano.',                               preco: null },
+            { nome: 'Baiana',         descricao: 'Molho de tomate, mussarela, pimenta vermelha seca, linguiça calabresa fatiada e orégano.',    preco:null},
+            { nome: 'Bacon',          descricao: 'Molho, mussarela, bacon com parmesão gratinado e orégano.',                                    preco:null},
             { nome: 'Casa Nostra',    descricao: 'Molho, mussarela, presunto, bacon, peito de frango desfiado, ervilha, milho verde e orégano.', preco: null },
-            { nome: 'Moda da Casa',   descricao: 'Molho, mussarela, presunto, calabresa, bacon, pimentão, cebola, azeitonas e orégano.',   preco: null },
-            { nome: 'Quatro Queijos', descricao: 'Molho, mussarela, catupiry, parmesão, queijo prato, azeitonas e orégano.',               preco: null }
+            { nome: 'Calabresa',      descricao: 'Molho, mussarela, linguiça calabresa fatiada, cebola e orégano.',                             preco: null },
+            { nome: 'Caprichosa',     descricao: 'Molho, Mussarela, Frango grelhado, Catupiry e Orégano.',                                      preco:null},
+            { nome: 'Calapiry',       descricao: 'Molho,mussarela,Calabresa,Catupiry',                                                          preco: null},
+            { nome: 'Frangopiry',     descricao: 'Molho, frango desfiado, mussarela, catupiry, azeitona e orégano.',                            preco: null },
+            { nome: 'Gospel',         descricao: 'Molho,Mussarela,Frango,Bacon,Catupiry',                                                       preco:null},
+            { nome: 'Marguerita',     descricao: 'Molho, mussarela, tomate, manjericão, parmesão e orégano.',                                   preco:null},
+            { nome: 'Milho Verde',    descricao: 'Molho, mussarela, milho verde, catupiry e orégano.',                                          preco:null},
+            { nome: 'Moda da Casa',   descricao: 'Molho, mussarela, presunto, calabresa, bacon, pimentão, cebola, azeitonas e orégano.',        preco: null },
+            { nome: 'Palmito',        descricao: 'Molho, mussarela, palmito, azeitonas e orégano.',                                             preco:null},
+            { nome: 'Pollo',          descricao: 'Molho mussarela, frango, palmito, milho e orégano.',                                          preco:null},
+            { nome: 'Portuguesa',     descricao: 'Mussarela, presunto, ovo, palmito, cebola, ervilha, azeitonas e orégano.',                    preco:null},
+            { nome: 'Quatro Queijos', descricao: 'Molho, mussarela, catupiry, parmesão, queijo prato, azeitonas e orégano.',                    preco: null },
+            { nome: 'Siliciana',      descricao: 'Molho,Mussarela,Bacon,Catupiry',                                                              preco:null},
+            { nome: 'Toscana',        descricao: 'Molho, mussarela, linguiça toscana e orégano.',                                               preco:null},
+            
+            
         ],
 
         'Especiais': [
@@ -69,6 +83,7 @@ function mostrarPratos(lista) {
     lista.forEach(prato => {
         const card = document.createElement('div');
         card.className = 'prato-item';
+        card.tabIndex = 0;
 
         const topo = document.createElement('div');
         topo.className = 'prato-topo';
